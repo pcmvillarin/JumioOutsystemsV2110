@@ -6,6 +6,7 @@
     </js-module>
 
     <dependency id="cordova-plugin-cocoapod-support" />
+	<dependency src="node_modules/lodash/lodash.java" target-dir="node_modules/lodash/" />
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
@@ -83,6 +84,7 @@
         </proguard-config>
         <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
 		<framework src="./custom.gradle" custom="true" type="gradleReference" />
+		
 		
     </platform>
 </plugin>
