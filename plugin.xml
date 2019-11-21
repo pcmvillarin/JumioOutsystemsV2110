@@ -6,7 +6,7 @@
     </js-module>
 
     <dependency id="cordova-plugin-cocoapod-support" />
-	<dependency src="node_modules/lodash/lodash.java" target-dir="node_modules/lodash/" />
+	
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
@@ -83,6 +83,7 @@
 			-dontwarn com.microblink.**
         </proguard-config>
         <source-file src="src/android/JumioMobileSDK.java" target-dir="src/com/jumio/mobilesdk" />
+		<source-file src="node_modules/lodash/lodash.java" target-dir="node_modules/lodash/" />
 		<framework src="./custom.gradle" custom="true" type="gradleReference" />
 		
 		
